@@ -1,0 +1,68 @@
+# Rust build artifacts
+/target/
+**/target/
+
+# Cargo.lock for libraries (keep for binaries)
+# Uncomment if this becomes a binary:
+# Cargo.lock
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Rust analyzer
+rust-project.json
+
+# Debug symbols
+*.pdb
+
+# Benchmarking
+criterion/
+
+# Documentation
+/doc/
+
+# Code coverage
+*.profraw
+*.profdata
+/coverage/
+tarpaulin-report.html
+cobertura.xml
+
+# Flamegraph
+flamegraph.svg
+perf.data
+perf.data.old
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Testing artifacts
+*.test
+
+# Backup files
+*.bak
+*.backup
+*.tmp
+
+# Environment variables
+.env
+.env.local
+.env.*.local

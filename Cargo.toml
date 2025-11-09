@@ -1,0 +1,21 @@
+[workspace]
+members = ["serde-tuplex-derive"]
+resolver = "2"
+
+[package]
+name = "serde-tuplex"
+version = "0.1.0"
+edition = "2024"
+description = "Tuple serialization and lenient numeric parsing for serde"
+repository = "https://github.com/Arasple/serde-tuplex"
+license = "MIT"
+readme = "README.md"
+keywords = ["serde", "tuple", "lenient", "parsing"]
+categories = ["encoding", "parsing"]
+
+[dependencies]
+serde = { version = "1.0.228", features = ["derive"] }
+serde-tuplex-derive = { version = "0.1.0", path = "serde-tuplex-derive" }
+
+[dev-dependencies]
+serde_json = "1.0.145"
