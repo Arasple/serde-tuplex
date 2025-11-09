@@ -1,5 +1,8 @@
 # serde-tuplex
 
+[![crates.io](https://img.shields.io/crates/v/serde-tuplex.svg)](https://crates.io/crates/serde-tuplex)
+[![docs.rs](https://docs.rs/serde-tuplex/badge.svg)](https://docs.rs/serde-tuplex)
+
 tuple serialization and lenient numeric parsing for [serde](https://crates.io/crates/serde)
 
 ## Features
@@ -10,6 +13,12 @@ tuple serialization and lenient numeric parsing for [serde](https://crates.io/cr
 - **Field-level control**: Use `#[serde_tuplex(skip)]` or `lenient` helper
 
 ## Installation
+
+```bash
+cargo add serde-tuplex serde --features serde/derive
+```
+
+Or manually in `Cargo.toml`:
 
 ```toml
 [dependencies]

@@ -5,6 +5,7 @@ edition = "2024"
 description = "Procedural macros for serde-tuplex"
 repository = "https://github.com/Arasple/serde-tuplex"
 license = "MIT"
+readme = "README.md"
 keywords = ["serde", "derive", "macro", "tuple"]
 categories = ["development-tools::procedural-macro-helpers"]
 

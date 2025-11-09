@@ -17,7 +17,7 @@ pub fn gen_serialize_impl(input: &DeriveInput) -> Result<TokenStream, syn::Error
                 return Err(syn::Error::new_spanned(
                     name,
                     "Serialize does not support tuple structs",
-                ))
+                ));
             }
         },
         _ => return Err(syn::Error::new_spanned(name, "Only supports structs")),

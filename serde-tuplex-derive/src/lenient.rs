@@ -23,20 +23,20 @@ pub fn gen_lenient_deserialize(
                 return Err(syn::Error::new_spanned(
                     name,
                     "Lenient does not support tuple structs",
-                ))
+                ));
             }
             Fields::Unit => {
                 return Err(syn::Error::new_spanned(
                     name,
                     "Lenient does not support unit structs",
-                ))
+                ));
             }
         },
         _ => {
             return Err(syn::Error::new_spanned(
                 name,
                 "Lenient only supports structs",
-            ))
+            ));
         }
     };
 

@@ -17,13 +17,13 @@ pub fn gen_deserialize_impl(input: &DeriveInput) -> Result<TokenStream, syn::Err
                 return Err(syn::Error::new_spanned(
                     name,
                     "Tuple does not support tuple structs",
-                ))
+                ));
             }
             Fields::Unit => {
                 return Err(syn::Error::new_spanned(
                     name,
                     "Tuple does not support unit structs",
-                ))
+                ));
             }
         },
         _ => return Err(syn::Error::new_spanned(name, "Tuple only supports structs")),
