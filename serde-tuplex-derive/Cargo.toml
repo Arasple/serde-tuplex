@@ -1,6 +1,6 @@
 [package]
 name = "serde-tuplex-derive"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "Procedural macros for serde-tuplex"
 repository = "https://github.com/Arasple/serde-tuplex"
